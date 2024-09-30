@@ -9,9 +9,9 @@ body {
 }
 
 header {
-    background: #333;
+    background: #938a8a;
     color: #fff;
-    padding: 10px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -26,6 +26,32 @@ header nav a:hover {
     color: #35af45;
 }
 
+nav {
+    float: right; /* Move the entire nav to the right */
+    margin-right: 30px; /* Adjust margin if needed */
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px; /* Space between links */
+    color: #020202; /* Optional: Adjust link color */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the image and text stay on opposite sides */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+
 main {
     padding: 20px;
     max-width: 1200px;
@@ -39,6 +65,46 @@ h1, h2, h3 {
 
 p {
     margin: 10px 0;
+}
+/* Hide menu on mobile by default */
+.menu {
+    display: none;
+    flex-direction: column;
+}
+
+/* Show the menu when the button is clicked */
+.menu.active {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Styles for the mobile menu toggle button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show the menu toggle button on small screens */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Home Page Styles */
