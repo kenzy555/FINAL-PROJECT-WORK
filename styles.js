@@ -1,7 +1,6 @@
-const toggleButton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
 
-toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('active');
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
-

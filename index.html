@@ -3,83 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kennedy Adortsu - Frontend Developer</title>
-    <meta name="description" content="Kennedy's portfolio and blog site.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ken's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/istockphoto-648709600-170667a.jpg" type="image/png">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Kennedy - Frontend Dev">
-    <meta property="og:image" content="https://png.pngtree.com/png-vector/20190406/ourmid/pngtree-html-file-document-icon-png-image_913761.jpg">
-    <meta property="og:description" content="Welcome to KENNEDY'S portfolio and blog site.">
-    <meta property="og:url" content="https://github.com/kenzy555/MONTH-1-PROJECT.git">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kennedy - Frontend Dev">
-    <meta name="twitter:description" content="Welcome to Kennedy's portfolio and blog site.">
-    <meta name="twitter:image" content="https://png.pngtree.com/png-vector/20190406/ourmid/pngtree-html-file-document-icon-png-image_913761.jpg">
-    <meta name="twitter:url" content="https://github.com/kenzy555/MONTH-1-PROJECT.git">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <a href="index.html">Home </a>
-            <a href="blog.html">Blog </a>
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <nav>
-            <button class="menu-toggle">Menu</button>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
+            <div class="logo">Hi, I am Ken</div>
+            <ul class="nav-links">
+                <li><a href="work.html">Works</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="work.html">Work</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="intro">
-            <img src="images/IMG_0050_jpg.JPG" alt="Ken's profile picture" class="profile-pic">
-            <h1>Hi, I am Ken, an engineering student and web developer</h1>
-            <p>Welcome to my portfolio and blog site where I showcase my work and share my thoughts on design, technology, and more.</p>
+
+   
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I am Ken, Creative Technologist</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna sit amet est tincidunt accumsan.</p>
             <a href="RESUME KEN.docx" download="KEN'S_Resume.docx" class="btn">Download Resume</a>
-        </section>
-        <section class="featured-works">
-            <h2>Hot Pick</h2>
-            <div class="articles-container">
-                <article>
-                    <img src="images/matlab.png" alt="Design System Preview" style="width: 200px">
-                    <h3><a href="https://www.mathworks.com/solutions/energy-production/utilities-energy/power-system-studies.html#:~:text=Scientists%20and%20engineers%20use%20MATLAB,using%20prebuilt%20functions%20and%20apps">Modeling a power system using Matlab</a></h3>
-                    <p>2024 | Mathworks.com</p>
-                </article>
-                <article>
-                    <img src="images/istockphoto-648709600-170667a.jpg" alt="Design System Preview" style="width: 200px">
-                    <h3><a href="https://contentsnare.com/web-design-portfolio/">Making a Design System from Scratch</a></h3>
-                    <p>10 Aug 2024 | Design, Pattern</p>
-                    <p>Learn how to design webpages from scratch.</p>
-                    
-                </article>
-            </div>
-        </section>
-            <!-- Additional works go here -->
-        </section>
-    </main>
+        </div>
+        <div class="hero-image">
+            <img src="IMG_0050_jpg.JPG" alt="Ken's Profile Picture">
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts">
+        <h2>Recent posts</h2>
+        <div class="posts-container">
+            <article class="post">
+                <h3>Making a design system from scratch</h3>
+                <p>12 Feb 2020 | Design Pattern</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius facilisis urna.</p>
+            </article>
+            <article class="post">
+                <h3>Creating pixel perfect icons in Figma</h3>
+                <p>12 Feb 2020 | Figma, Icon Design</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius facilisis urna.</p>
+            </article>
+        </div>
+    </section>
+
+    
+    <section class="featured-works">
+        <h2>Featured works</h2>
+        <div class="works-container">
+            <article class="work">
+                <h3>Designing Dashboards</h3>
+                <p>2020 | Dashboard</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius facilisis urna.</p>
+            </article>
+            <article class="work">
+                <h3>Vibrant Portraits of 2020</h3>
+                <p>2018 | Illustration</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius facilisis urna.</p>
+            </article>
+            <article class="work">
+                <h3>36 Days of Malayalam type</h3>
+                <p>2018 | Typography</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius facilisis urna.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Author: KENNEDY ADORTSU</p>
+        <p>Copyright © 2024 All rights reserved</p>
         <ul class="social-media">
             <li>
                 <a href="https://x.com/dekenzyy">
-                    <img src="images/twitter logo.jpg" alt="Twitter" style="width:26px; height:16px; vertical-align:middle;"> Twitter
+                    <img src="facebook logo.jpeg" alt="Facebook" style="width:26px; height:16px; vertical-align:middle;"> Facebook
                 </a>
             </li>
             <li>
                 <a href="https://github.com/kenzy555">
-                    <img src="images/GitHub-logo.png" alt="GitHub" style="width:60px; height:36px; vertical-align:middle;"> GitHub
+                    <img src="GitHub-logo.png" alt="GitHub" style="width:60px; height:36px; vertical-align:middle;"> GitHub
                 </a>
             </li>
         </ul>
-        <p>&copy; 2024 KENNEDY. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
